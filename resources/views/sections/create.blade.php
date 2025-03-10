@@ -1,6 +1,6 @@
 @extends('layout.plantilla')
 @section('contenido')
-<div class="h-full  py-20 overflow-y-auto" style="background-color: #142d4d">
+<div class="h-screen  py-20 overflow-y-auto">
     <div class="max-w-md mx-auto bg-white p-8 rounded-xl shadow-2xl border border-gray-200 mb-10">
         <h3 class="text-3xl font-extrabold mb-6 text-center text-blue-600">Crear Post</h3>
         <form action="{{route('posts.store',auth()->user()->id)}}" method="POST" class="space-y-6" enctype="multipart/form-data">
